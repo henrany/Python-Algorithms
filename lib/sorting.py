@@ -1,6 +1,6 @@
 
 class Sorting:
-    def bubbleSort(self,l: list ):
+    def bubbleSort(l: list ):
         temp = 0
         for i in range(len(l)):
             for j in range(len(l) - 1):
