@@ -1,5 +1,5 @@
 import unittest
-from lib import bubbleSort
+from lib import sorting
 
 class TestAlgorithms(unittest.TestCase):
     
@@ -8,4 +8,4 @@ class TestAlgorithms(unittest.TestCase):
         self.expected = [1,2,3,4,5,6,7,8,9]
 
     def testBubbleSort(self):
-        self.assertEqual(bubbleSort(self.l), self.expected)
+        self.assertEqual(sorting.Sorting.bubbleSort(self,self.l), self.expected)
