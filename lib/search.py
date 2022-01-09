@@ -23,11 +23,13 @@ class Search:
         while(l[int(min(gap, len(l))-1)]<val):
             left = gap
             gap = gap + sqrt(len(l))
-            if(left>=len(l)):
+            if(left >= len(l)):
                 break
-        while(l[int(left)]<val):
-            left =left + 1
-            if(left== min(gap, len(l))):
-                break
-        if(l[int(left)]==val): return True
-        else: return False
+        if int(left) < len(l):
+            while(l[int(left)]< val):
+                left =left + 1
+                if(left== min(gap, len(l))):
+                    break
+            if(l[int(left)]==val): return True
+            else: return False
+        return False
